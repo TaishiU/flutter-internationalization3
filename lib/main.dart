@@ -39,7 +39,13 @@ class MyHomePage extends StatelessWidget {
         title: Text(AppLocalizations.of(context)!.translate('title')),
       ),
       body: Center(
-        child: Text(AppLocalizations.of(context)!.translate('Message')),
+        child: Text(
+          AppLocalizations.of(context)!.translate('Message'),
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 30,
+          ),
+        ),
       ),
     );
   }
